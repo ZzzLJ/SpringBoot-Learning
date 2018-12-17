@@ -1,0 +1,9 @@
+server:
+  port: 8080
+#
+srping:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql:///learning?serverTimezone=GMT%2B8
+    name: root
+    password: toor

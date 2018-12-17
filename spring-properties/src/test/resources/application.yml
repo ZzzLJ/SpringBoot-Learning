@@ -1,0 +1,14 @@
+#键值对冒号后面，必须空一格  中文不会乱码
+## Myself
+##被main/resources/application.properties 定义的myself属性值覆盖
+myself:
+  name: 一切都是
+  address: 最好的安排
+  description: ${myself.name} ${myself.address}
+
+## User
+user:
+  id: ${random.long}
+  age: ${random.int[1,200]}
+  desc: 描述：${random.value}
+  uuid: ${random.uuid}
