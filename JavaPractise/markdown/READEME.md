@@ -45,3 +45,22 @@ publlic static void main(String[] args){
 
 ~~删除划线内容~~
 
+1、Mybatis、Mybatis Plus官方文档，重新整理GitHub 里的Mybatis仓库
+2、看Github里的Springboot快速开发脚手架
+3、ruoyi、guns、bootdo
+4、毕设
+	需求文档
+	表设计
+	开发接口文档
+	前端界面修改
+	代码实现
+	测试
+	公网发布
+	毕业论文
+    2.20
+5、
+	Http、JVM、
+	Niuke
+	JianLi 内容学透彻
+	PaiXv  算法
+	
