@@ -1,6 +1,6 @@
 server:
   port: 8080
-#
+
 srping:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver

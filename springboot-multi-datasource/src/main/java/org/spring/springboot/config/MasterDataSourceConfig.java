@@ -15,7 +15,8 @@ import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import javax.sql.DataSource;
 
 @Configuration
-// 扫描 Mapper 接口并容器管理
+// @MapperScan 扫描 Mapper 接口并容器管理，包路径精确到 master，为了和下面 cluster 数据源做到精确区分
+//sqlSessionFactoryRef 表示定义了 key ，表示一个唯一 SqlSessionFactory 实例
 @MapperScan(basePackages = MasterDataSourceConfig.PACKAGE, sqlSessionFactoryRef = "masterSqlSessionFactory")
 public class MasterDataSourceConfig {
 
@@ -29,12 +30,19 @@ public class MasterDataSourceConfig {
     @Value("${master.datasource.username}")
     private String user;
 
+    /*
+    * @Value 获取全局配置文件 application.properties 的 kv 配置,并自动装配
+    * */
     @Value("${master.datasource.password}")
     private String password;
 
     @Value("${master.datasource.driverClassName}")
     private String driverClass;
 
+    /*
+    * @Primary 标志这个 Bean 如果在多个同类 Bean 候选时，该 Bean 优先被考虑。
+    * 多数据源配置的时候注意，必须要有一个主数据源，用 @Primary 标志该 Bean
+    * */
     @Bean(name = "masterDataSource")
     @Primary
     public DataSource masterDataSource() {
