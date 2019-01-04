@@ -3,7 +3,7 @@
 #### spring-boot 2.x
 * [springboot-start - Spring Boot实现Restful服务，基于HTTP/JSON传输](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-start/README.md)
 * [springboot-properties - Spring Boot配置文件](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-properties/README.md)
-* [thymeleaf_freemarker - Spring Boot集成Thymeleaf、Free marker](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/thymeleaf_freemarker/README.md)
+* [springboot-thymeleaf_freemarker - Spring Boot集成Thymeleaf、Free marker](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/thymeleaf_freemarker/README.md)
 * [springboot-mybatis - Spring Boot整合Mybatis](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-mybatis/README.md)
 * [springboot-multi-datasource - Spring Boot整合Mybatis实现Druid多数据源](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-multi-datasource/README.md)
 * [springboot-shiro - Shiro的使用及Spring Boot整合Shiro](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-shiro/README.md)

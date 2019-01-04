@@ -1,4 +1,4 @@
-#### thymeleaf_freemarker Structure
+#### springboot-thymeleaf_freemarker Structure
         ├─main
         │  ├─java
         │  │  └─com
