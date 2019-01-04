@@ -11,6 +11,7 @@
         <module name="springboot-mybatis" />
         <module name="springboot-shiro" />
         <module name="springboot-start" />
+        <module name="springboot-thymeleaf_freemarker" />
         <module name="thymeleaf_freemarker" />
       </profile>
     </annotationProcessing>
@@ -22,6 +23,7 @@
       <module name="springboot-mybatis-mutil-datasource" target="1.6" />
       <module name="springboot-shiro" target="1.8" />
       <module name="springboot-start" target="1.8" />
+      <module name="springboot-thymeleaf_freemarker" target="1.8" />
       <module name="thymeleaf_freemarker" target="1.8" />
     </bytecodeTargetLevel>
   </component>
