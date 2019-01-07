@@ -21,14 +21,8 @@
       <change beforePath="" afterPath="$PROJECT_DIR$/springboot-mybatis_plus/src/main/resources/mapper/generator/UsersMapper.xml" />
       <change beforePath="" afterPath="$PROJECT_DIR$/springboot-mybatis_plus/src/test/java/com/springbootmybatis_plus/CodeGenerator.java" />
       <change beforePath="" afterPath="$PROJECT_DIR$/springboot-mybatis_plus/src/test/java/com/springbootmybatis_plus/SpringbootMybatisPlusApplicationTests.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/springbootmybatis/handler/TestEnum.java" afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/java/com/springbootmybatis/handler/TestEnum.java" />
-      <change beforePath="$PROJECT_DIR$/springboot-mybatis/src/main/resources/mybatis-generator/generatorConfig.xml" afterPath="$PROJECT_DIR$/springboot-mybatis/src/main/resources/mybatis-generator/generatorConfig.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/spring-properties/target/" />
     <ignored path="$PROJECT_DIR$/springboot-multi-datasource/target/" />
@@ -148,6 +142,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SpringbootMybatisPlusApplicationTests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springboot-mybatis_plus/src/test/java/com/springbootmybatis_plus/SpringbootMybatisPlusApplicationTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/springboot-mybatis_plus/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
@@ -161,12 +167,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="598">
-                <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+              <first_editor relative-caret-position="650">
+                <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -174,10 +180,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CodeGenerator.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/springboot-mybatis_plus/src/test/java/com/springbootmybatis_plus/CodeGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1418">
+            <state relative-caret-position="-1262">
               <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
               <folding />
             </state>
@@ -707,7 +713,7 @@
       <workItem from="1546587847886" duration="2186000" />
       <workItem from="1546591317183" duration="2443000" />
       <workItem from="1546754478086" duration="10329000" />
-      <workItem from="1546840555302" duration="13210000" />
+      <workItem from="1546840555302" duration="13281000" />
     </task>
     <task id="LOCAL-00001" summary="update...">
       <created>1545031585139</created>
@@ -744,7 +750,14 @@
       <option name="project" value="LOCAL" />
       <updated>1546592586218</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="updating...">
+      <created>1546865238486</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1546865238486</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -780,7 +793,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45203000" />
+    <option name="totallyTimeSpent" value="45274000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1260,16 +1273,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis_plus/src/test/java/com/springbootmybatis_plus/SpringbootMybatisPlusApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/springboot-mybatis/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SECOND">
@@ -1278,14 +1281,6 @@
             <folding />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springboot-mybatis_plus/src/test/java/com/springbootmybatis_plus/CodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1418">
-          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1303,11 +1298,29 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="598">
-            <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
+          <first_editor relative-caret-position="650">
+            <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis_plus/src/test/java/com/springbootmybatis_plus/SpringbootMybatisPlusApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="79" column="35" lean-forward="true" selection-start-line="79" selection-start-column="35" selection-end-line="79" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-mybatis_plus/src/test/java/com/springbootmybatis_plus/CodeGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1262">
+          <caret line="38" column="9" lean-forward="true" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
