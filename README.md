@@ -8,7 +8,7 @@
 * [springboot-mybatis_plus - Spring Boot整合Mybatis-Plus](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-mybatis_plus/README.md)
 * [springboot-multi-datasource - Spring Boot整合Mybatis实现Druid多数据源](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-multi-datasource/README.md)
 * [springboot-shiro - Shiro的使用及Spring Boot整合Shiro](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-shiro/README.md)
-* [springboot- - Spring Boot](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-/README.md)
+* [springboot-swagger2 - Spring Boot整合Swagger2](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-swagger2/README.md)
 * [springboot- - Spring Boot](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-/README.md)
 * [springboot- - Spring Boot](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-/README.md)
 

@@ -6,17 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spring-boot-api-project-seed" />
         <module name="spring-properties" />
         <module name="springboot-multi-datasource" />
         <module name="springboot-mybatis" />
         <module name="springboot-mybatis_plus" />
         <module name="springboot-shiro" />
         <module name="springboot-start" />
+        <module name="springboot-swagger2" />
         <module name="springboot-thymeleaf_freemarker" />
         <module name="thymeleaf_freemarker" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Chapter3-1-6" target="1.8" />
+      <module name="spring-boot-api-project-seed" target="1.8" />
+      <module name="spring-boot-rest-template" target="1.8" />
+      <module name="spring-boot-swagger2" target="1.8" />
       <module name="spring-properties" target="1.8" />
       <module name="springboot" target="1.8" />
       <module name="springboot-multi-datasource" target="1.6" />
@@ -25,8 +31,10 @@
       <module name="springboot-mybatis_plus" target="1.8" />
       <module name="springboot-shiro" target="1.8" />
       <module name="springboot-start" target="1.8" />
+      <module name="springboot-swagger2" target="1.8" />
       <module name="springboot-thymeleaf_freemarker" target="1.8" />
       <module name="thymeleaf_freemarker" target="1.8" />
+      <module name="website" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

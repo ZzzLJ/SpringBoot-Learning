@@ -91,6 +91,8 @@
         <option value="$PROJECT_DIR$/springboot-multi-datasource/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-thymeleaf_freemarker/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-mybatis_plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-api-project-seed/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-swagger2/pom.xml" />
       </list>
     </option>
   </component>

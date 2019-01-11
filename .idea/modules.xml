@@ -3,12 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaPractise/JavaPractise.iml" filepath="$PROJECT_DIR$/JavaPractise/JavaPractise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-boot-api-project-seed/spring-boot-api-project-seed.iml" filepath="$PROJECT_DIR$/spring-boot-api-project-seed/spring-boot-api-project-seed.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-properties/spring-properties.iml" filepath="$PROJECT_DIR$/spring-properties/spring-properties.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-multi-datasource/springboot-multi-datasource.iml" filepath="$PROJECT_DIR$/springboot-multi-datasource/springboot-multi-datasource.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" filepath="$PROJECT_DIR$/springboot-mybatis/springboot-mybatis.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-mybatis_plus/springboot-mybatis_plus.iml" filepath="$PROJECT_DIR$/springboot-mybatis_plus/springboot-mybatis_plus.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" filepath="$PROJECT_DIR$/springboot-shiro/springboot-shiro.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-start/springboot-start.iml" filepath="$PROJECT_DIR$/springboot-start/springboot-start.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" filepath="$PROJECT_DIR$/springboot-swagger2/springboot-swagger2.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-thymeleaf_freemarker/springboot-thymeleaf_freemarker.iml" filepath="$PROJECT_DIR$/springboot-thymeleaf_freemarker/springboot-thymeleaf_freemarker.iml" />
     </modules>
   </component>
