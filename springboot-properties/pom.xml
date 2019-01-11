@@ -4,12 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>spring-properties</artifactId>
+    <artifactId>springboot-properties</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>spring-properties</name>
-    <description></description>
+    <name>springboot-properties</name>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
