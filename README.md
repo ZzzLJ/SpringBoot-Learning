@@ -10,6 +10,7 @@
 * [springboot-shiro - Shiro的使用及Spring Boot整合Shiro](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-shiro/README.md)
 * [springboot-swagger2 - Spring Boot整合Swagger2](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-swagger2/README.md)
 * [springboot-global_exception_handle - Spring Boot全局异常处理](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-global_exception_handle/README.md)
+* [springboot-dubbo_zookeeper_activemq_redis - Spring Boot整合Dubbo、Zookeeper、ActiveMQ、Redis](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-dubbo_zookeeper_activemq_redis/README.md)
 * [springboot- - Spring Boot](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-/README.md)
 * [springboot- - Spring Boot](https://github.com/ZzzLJ/SpringBoot-Learning/blob/master/springboot-/README.md)
 
