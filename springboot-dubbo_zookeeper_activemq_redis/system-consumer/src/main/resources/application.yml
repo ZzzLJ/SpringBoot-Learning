@@ -1,0 +1,20 @@
+server:
+  port: 7772
+
+spring:
+  application:
+    name: SystemConsumer
+
+dubbo:
+  #Dubbo信息
+  application:
+    name: system-consumer
+  #注册中心信息
+  registry:
+    id: system-consumer
+    #N/A
+    address: zookeeper://127.0.0.1:2181
+  #协议信息
+  #protocol:
+  #    name: dubbo
+  #    port: 20880
