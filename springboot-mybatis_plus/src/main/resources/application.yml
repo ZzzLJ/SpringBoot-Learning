@@ -3,4 +3,4 @@ spring:
     #url: jdbc:mysql://localhost:3306/learning?serverTimezone=GMT%2B8
     username: root
     password: toor
-    url: jdbc:mysql:///learning?serverTimezone=GMT%2B8
+    url: jdbc:mysql:///integratedsystem?serverTimezone=GMT%2B8&useSSL=false

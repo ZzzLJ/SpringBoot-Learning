@@ -1,5 +1,6 @@
 package com.springbootmybatis_plus;
 
+import com.baomidou.mybatisplus.annotation.DbType;
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
@@ -9,28 +10,22 @@ import com.baomidou.mybatisplus.generator.config.*;
 import com.baomidou.mybatisplus.generator.config.po.TableInfo;
 import com.baomidou.mybatisplus.generator.config.rules.NamingStrategy;
 import com.baomidou.mybatisplus.generator.engine.FreemarkerTemplateEngine;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import com.sun.xml.internal.bind.v2.TODO;
+
+import java.util.*;
 
 /**
- * @Author: ZzzLJ
- * AutoGenerator 是 MyBatis-Plus 的代码生成器，通过 AutoGenerator 可以快速生成 Entity、Mapper、Mapper XML、Service、Controller 等各个模块的代码，极大的提升了开发效率。
+ * MyBatis-Plus 的代码生成器，自动生成Entity、Mapper、Mapper XML、Service、Controller模块代码。
+ * 具体参数配置，参考：
+ *                      https://mp.baomidou.com/guide/generator.html
+ *                      https://mp.baomidou.com/config/generator-config.html
  */
 
 // 演示例子，执行 main 方法控制台输入模块表名回车自动生成对应项目目录中
 public class CodeGenerator {
-
-    /**
-     * <p>
-     * 读取控制台内容
-     * </p>
-     */
     private static String scanner(String tip) {
         Scanner scanner = new Scanner(System.in);
-        StringBuilder help = new StringBuilder();
-        help.append("请输入" + tip + "：");
-        System.out.println(help.toString());
+        System.out.println("请输入" + tip + "：");
         if (scanner.hasNext()) {
             String ipt = scanner.next();
             if (StringUtils.isNotEmpty(ipt)) {
@@ -42,85 +37,127 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
         // 代码生成器
-        AutoGenerator mpg = new AutoGenerator();
+        AutoGenerator autoGenerator = new AutoGenerator();
 
         // 全局配置
-        GlobalConfig gc = new GlobalConfig();
+        GlobalConfig globalConfig = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
-        gc.setOutputDir(projectPath + "/springboot-mybatis_plus/src/main/java");
-        gc.setAuthor("ZzzLJ");
-        gc.setOpen(false);
-        mpg.setGlobalConfig(gc);
+        globalConfig.setOutputDir(projectPath + "/springboot-mybatis_plus/src/main/java");
+        globalConfig.setAuthor("ZzzLJ");
+
+        //globalConfig.setSwagger2(true);
+        globalConfig.setBaseResultMap(true);
+
+        globalConfig.setOpen(true);
+        autoGenerator.setGlobalConfig(globalConfig);
 
         // 数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
-        dsc.setUrl("jdbc:mysql://localhost:3306/learning?useSSL=false&serverTimezone=GMT%2B8");
-        // dsc.setSchemaName("public");
+        dsc.setUrl("jdbc:mysql://localhost:3306/integratedsystem?useSSL=false&serverTimezone=GMT%2B8");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("toor");
-        mpg.setDataSource(dsc);
+        autoGenerator.setDataSource(dsc);
 
         // 包配置
         PackageConfig pc = new PackageConfig();
+        //父包模块名
         pc.setModuleName(scanner("模块名"));
-        pc.setParent("com.mybatis_plus");
-        mpg.setPackageInfo(pc);
+        //父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
+        pc.setParent("com.wyu");
+        autoGenerator.setPackageInfo(pc);
 
-        // 自定义配置
-        InjectionConfig cfg = new InjectionConfig() {
+        /*
+        * 配置自定义属性注入
+        * 自定义属性注入:abc
+        * 在.ftl(或者是.vm)模板中，通过${cfg.abc}获取属性
+        */
+        InjectionConfig injectionConfig = new InjectionConfig() {
             @Override
             public void initMap() {
-                // to do nothing
+                Map<String, Object> map = new HashMap<>();
+                map.put("abc", this.getConfig().getGlobalConfig().getAuthor() + "-mp");
+                map.put("customController", this.getConfig().getGlobalConfig().getAuthor() + "-Controller");
+                map.put("customIService", this.getConfig().getGlobalConfig().getAuthor() + "-IService");
+                map.put("customMapper", this.getConfig().getGlobalConfig().getAuthor() + "-Mapper");
+                map.put("customMapper XML", this.getConfig().getGlobalConfig().getAuthor() + "-Mapper XML");
+                map.put("customEntity", this.getConfig().getGlobalConfig().getAuthor() + "-Entity");
+                this.setMap(map);
             }
         };
+        autoGenerator.setCfg(injectionConfig);
 
         // 如果模板引擎是 freemarker
-        String templatePath = "/templates/mapper.xml.ftl";
+        String templatePath = "/templates/mapper2.xml.ftl";
         // 如果模板引擎是 velocity
         // String templatePath = "/templates/mapper.xml.vm";
 
-        // 自定义输出配置
+        // 调整 xml 生成目录演示
         List<FileOutConfig> focList = new ArrayList<>();
         // 自定义配置会被优先输出
         focList.add(new FileOutConfig(templatePath) {
             @Override
             public String outputFile(TableInfo tableInfo) {
-                // 自定义输出文件名
+                // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
                 return projectPath + "/springboot-mybatis_plus/src/main/resources/mapper/" + pc.getModuleName()
                         + "/" + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
         });
 
-        cfg.setFileOutConfigList(focList);
-        mpg.setCfg(cfg);
+        injectionConfig.setFileOutConfigList(focList);
+        autoGenerator.setCfg(injectionConfig);
 
         // 配置模板
         TemplateConfig templateConfig = new TemplateConfig();
+        // 指定自定义模板路径, 位置：/resources/templates/entity2.java.ftl(或者是.vm)
+        //指定自定义模板路径，注意不要带上.ftl/.vm, 会根据使用的模板引擎自动识别
+        templateConfig.setEntity("/templates/entity2.java");
+        templateConfig.setService("/templates/service2.java");
+        templateConfig.setController("/templates/controller2.java");
+        templateConfig.setServiceImpl("/templates/serviceImpl2.java");
+        templateConfig.setEntityKt("/templates/entity2.kt");
+        templateConfig.setMapper("/templates/mapper2.java");
+        templateConfig.setXml("/templates/mapper2.xml");
+        autoGenerator.setTemplate(templateConfig);
 
-        // 配置自定义输出模板
-        // templateConfig.setEntity();
-        // templateConfig.setService();
-        // templateConfig.setController();
-
-        templateConfig.setXml(null);
-        mpg.setTemplate(templateConfig);
-
-        // 策略配置
+        // 数据库表配置，通过该配置，可指定需要生成哪些表或者排除哪些表
         StrategyConfig strategy = new StrategyConfig();
+        //数据库表映射到实体的命名策略-驼峰命名
         strategy.setNaming(NamingStrategy.underline_to_camel);
+        //数据库表字段映射到实体的命名策略-驼峰命名
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("com.mybatis_plus.generator.common.BaseEntity");
+
+        //自定义继承的Entity类、Mapper类、Service类、ServiceImpl类、Controller类全称，带包名
+        //strategy.setSuperEntityClass("com.mybatis_plus.wyu.common.BaseEntity");
+        //strategy.setSuperMapperClass();
+        //strategy.setSuperControllerClass("com.mybatis_plus.wyu.common.BaseController");
+        //自定义基础的Entity类，公共字段
+        //strategy.setSuperEntityColumns("id");
+
+        String[] tables = new String[]{
+                "sys_department","sys_grade"
+        };
+        //需要包含的表名，允许正则表达式
+        //strategy.setInclude("sys_*");
+        strategy.setInclude(tables);
+        //需要排除的表名，允许正则表达式
+        strategy.setExclude();
+
+        //是否为lombok模型
         strategy.setEntityLombokModel(true);
-        strategy.setRestControllerStyle(true);
-        strategy.setSuperControllerClass("com.mybatis_plus.generator.common.BaseController");
-        strategy.setInclude(scanner("表名"));
-        strategy.setSuperEntityColumns("id");
+        //生成 @RestController 控制器
+        strategy.setRestControllerStyle(false);
+        //驼峰转连字符
         strategy.setControllerMappingHyphenStyle(true);
+        //表前缀
         strategy.setTablePrefix(pc.getModuleName() + "_");
-        mpg.setStrategy(strategy);
-        mpg.setTemplateEngine(new FreemarkerTemplateEngine());
-        mpg.execute();
+
+
+
+        autoGenerator.setStrategy(strategy);
+
+        autoGenerator.setTemplateEngine(new FreemarkerTemplateEngine());
+        autoGenerator.execute();
     }
 
 }
