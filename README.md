@@ -16,6 +16,7 @@
 
 #### Reference
 * [Spring Boot 2.x Reference Guide](https://docs.spring.io/spring-boot/docs/2.0.6.RELEASE/reference/htmlsingle/)
+* [spring boot 系列文章](http://www.ityouknow.com/spring-boot.html)
 * [spring boot 实践学习案例](https://github.com/JeffLi1993/springboot-learning-example)
 * [Spring Boot教程](https://github.com/dyc87112/SpringBoot-Learning)
 * [一个基于Spring Boot & MyBatis的种子项目](https://github.com/lihengming/spring-boot-api-project-seed)

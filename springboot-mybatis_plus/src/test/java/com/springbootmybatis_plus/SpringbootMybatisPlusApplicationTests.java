@@ -23,7 +23,6 @@ import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.boot.web.server.LocalServerPort;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.junit4.SpringRunner;
-
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.ArrayList;
@@ -78,13 +77,16 @@ public class SpringbootMybatisPlusApplicationTests {
     }
 
     /*
-    * CRUD接口，参考：https://mp.baomidou.com/guide/crud-interface.html
+    * Mapper CRUD接口，参考：https://mp.baomidou.com/guide/crud-interface.html
     * */
     @Test
     public void test3(){
 
     }
 
+    /*
+    * Mapper 分页
+    * */
     @Test
     public void test4(){
         //com.springbootmybatis_plus.config.MybatisPlusConfig  配置分页插件
@@ -98,14 +100,25 @@ public class SpringbootMybatisPlusApplicationTests {
         userList.forEach(System.out::println);
     }
 
+    /*
+    * IService CRUD接口
+    * */
     @Test
     public void test5(){
-
+        List<SysDepartment> departmentList = departmentService.list(null);
+        departmentList.forEach(System.out::println);
+        List<SysGrade> gradeList = gradeService.list(null);
+        gradeList.forEach(System.out::println);
     }
 
+    /*
+    * Service 分页
+    * */
     @Test
     public void test6(){
-
+        //current 从1开始 size个
+        IPage<SysGrade> gradeIPage = gradeService.page(new Page<>(1, 3), null);
+        gradeIPage.getRecords().forEach(System.out::println);
     }
 
     /*@Autowired

@@ -22,6 +22,6 @@ public class SysDepartmentController {
     @ResponseBody
     @RequestMapping
     public List<SysDepartment> test(){
-        return departmentService.queryAll();
+        return departmentService.list(null);
     }
 }
