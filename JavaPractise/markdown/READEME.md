@@ -46,10 +46,10 @@ publlic static void main(String[] args){
 ~~删除划线内容~~
 
 1、Mybatis、Mybatis Plus官方文档，重新整理GitHub 里的Mybatis仓库
-1.1、Swagger2构建RESRful API文档
-1.2、统一异常处理
+
 2、看Github里的Springboot快速开发脚手架
-2.1、SpringBoot集成dubbo、zookeeper、ActiveMQ
+2.1、SpringBoot集成Dubbo、Zookeeper、ActiveMQ、Redis
+2.2、Docker学习
 3、ruoyi、guns、bootdo
 4、毕设
 	需求文档
