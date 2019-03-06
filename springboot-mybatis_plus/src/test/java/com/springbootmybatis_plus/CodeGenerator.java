@@ -61,6 +61,7 @@ public class CodeGenerator {
 
         // 包配置
         PackageConfig pc = new PackageConfig();
+        pc.setEntity("po");
         //父包模块名
         pc.setModuleName(scanner("模块名"));
         //父包名。如果为空，将下面子包名必须写全部， 否则就只需写子包名
@@ -138,8 +139,9 @@ public class CodeGenerator {
                 "sys_department","sys_grade"
         };
         //需要包含的表名，允许正则表达式
-        //strategy.setInclude("sys_*");
-        strategy.setInclude(tables);
+        //strategy.setInclude(tables);
+        //自动生成前缀以sys_开头的表
+        strategy.setTablePrefix("sys_");
         //需要排除的表名，允许正则表达式
         strategy.setExclude();
 
@@ -149,10 +151,6 @@ public class CodeGenerator {
         strategy.setRestControllerStyle(false);
         //驼峰转连字符
         strategy.setControllerMappingHyphenStyle(true);
-        //表前缀
-        strategy.setTablePrefix(pc.getModuleName() + "_");
-
-
 
         autoGenerator.setStrategy(strategy);
 
